@@ -1,0 +1,20 @@
+version: "3.8"
+
+networks:
+  viixoo-cfdi-php-examples:
+    external: true
+
+services:
+  cfdi-php-examples:
+    container_name: cfdi-php-examples
+    build:
+      context: .
+      dockerfile: Dockerfile.php.local
+    image: application
+    volumes:
+      - ./php_code:/var/www/html
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - viixoo-cfdi-php-examples
