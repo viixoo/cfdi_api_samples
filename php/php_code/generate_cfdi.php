@@ -38,7 +38,6 @@ $postData = array(
   ),
   "exportacion" => "01",
   "fecha" => "2024-03-25T04:17:10",
-  "folio" => "33",
   "forma_pago" => "99",
   "lugar_expedicion" => "20928",
   "metodo_pago" => "PUE",
